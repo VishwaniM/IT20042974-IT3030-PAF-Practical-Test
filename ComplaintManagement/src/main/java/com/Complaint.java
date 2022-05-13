@@ -75,14 +75,36 @@ public class Complaint {
 			return "Error while connecting to the database for reading.";
 	}
 		// Prepare the html table to be displayed
-		output = "<table border='1'><tr><th>Complainer Name</th>"
-				+ "<th>Email</th>" 
-				+ "<th>Phone Number</th>" 
-				+ "<th>Complaint category</th>"
-				+ "<th>Complaint</th>" 
-				+ "<th>Issue Area</th>" 
-				+ "<th>Remarks</th>"
-				+ "<th>Update</th><th>Remove</th></tr>";
+		output = "<table class=' table table-sm table-bordered table-white text-nowrap table-hover' >"
+				+ "<thead class='thead-dark'>"
+					+ "<tr>"
+						+ "<th>Complainer Name</th>"
+						+ "<th>Email</th>" 
+						+ "<th>Phone Number</th>" 
+						+ "<th>Complaint category</th>"
+						+ "<th>Complaint</th>" 
+						+ "<th>Issue Area</th>" 
+						+ "<th>Remarks</th>"
+						+ "<th>Update</th>"
+						+ "<th>Remove</th>"
+					+ "</tr>"
+				+ "</thead>";
+		
+//		output +="<table class=\"table table-bordered table-active\">\r\n"
+//				+ "  <thead>\r\n"
+//				+ "    <tr>\r\n"
+//				+ "      <th scope=\"col\">Complainer Name</th>\r\n"
+//				+ "      <th scope=\"col\">Email</th>\r\n"
+//				+ "      <th scope=\"col\">Phone Number</th>\r\n"
+//				+ "      <th scope=\"col\">Complaint category</th>\r\n"
+//				+ "		 <th scope=\"col\">Complaint</th>\r\n"
+//				+ "		 <th scope=\"col\">Issue Area</th>\r\n"
+//				+ "		 <th scope=\"col\">Remarks</th>\r\n"
+//				+ "		 <th scope=\"col\">Update</th>\r\n"
+//				+ "		 <th scope=\"col\">Remove</th>\r\n"
+//				+ "    </tr>\r\n"
+//				+ "  </thead>\r\n";			
+
 		
 		String query = "select * from complaints";
 		Statement stmt = con.createStatement();
