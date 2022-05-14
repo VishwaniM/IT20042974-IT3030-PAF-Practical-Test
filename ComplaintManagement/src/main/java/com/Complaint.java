@@ -88,22 +88,7 @@ public class Complaint {
 						+ "<th>Update</th>"
 						+ "<th>Remove</th>"
 					+ "</tr>"
-				+ "</thead>";
-		
-//		output +="<table class=\"table table-bordered table-active\">\r\n"
-//				+ "  <thead>\r\n"
-//				+ "    <tr>\r\n"
-//				+ "      <th scope=\"col\">Complainer Name</th>\r\n"
-//				+ "      <th scope=\"col\">Email</th>\r\n"
-//				+ "      <th scope=\"col\">Phone Number</th>\r\n"
-//				+ "      <th scope=\"col\">Complaint category</th>\r\n"
-//				+ "		 <th scope=\"col\">Complaint</th>\r\n"
-//				+ "		 <th scope=\"col\">Issue Area</th>\r\n"
-//				+ "		 <th scope=\"col\">Remarks</th>\r\n"
-//				+ "		 <th scope=\"col\">Update</th>\r\n"
-//				+ "		 <th scope=\"col\">Remove</th>\r\n"
-//				+ "    </tr>\r\n"
-//				+ "  </thead>\r\n";			
+				+ "</thead>";		
 
 		
 		String query = "select * from complaints";
